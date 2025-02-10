@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+Telugu:wght@300&family=Tangerine:wght@700&display=swap');
+
+body {
+  background-color: #fefcfa;
+  font-family: Tangerine, sans-serif;
+  font-weight: 700;
+  font-size: 250%;
+  color: #ab8240;
+
+}
+
+
+
+/* heading and logo*/
+
+#logo {
+  float: left;
+  width: 15%;
+}
+
+
+/* navigation */
+
+#menu {
+  font-family: "Bebas Neue", serif;
+  font-size: 50%;
+  float: right;
+  color: #42250F;
+  letter-spacing: .1vw;
+  line-height: 50px;
+}
+
+#menu li {
+  float: left;
+  list-style-type: none;
+  margin-right: 55px;
+}
+
+/* links */
+
+a {
+  text-decoration: none;
+  color: #42250F;
+}
+
+a:hover {
+  border-bottom: 1px solid #42250F;
+}
+
+.active {
+  border-bottom: 1px solid #42250F;
+}
+
+
+
+/* slider */
+
+.slider {
+  clear: both;
+  width: 80%;
+  height: 80vh;
+  border-radius: 35%;
+  border-width: 15px;
+  border-style: groove;
+  border-color: #42250F;
+  background-size: cover;
+  box-shadow: 3px 5px 10px 15px #ab8240;
+  animation-name: slider;
+  animation: slider 14s infinite linear;
+  margin-left: 10%;
+}
+
+.presentation {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px;
+}
+
+.presentation-item {
+    padding: 0 10% 10% 10% ;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+h3:hover {
+    color:#ab8240;
+}
+
+/* home page text */
+
+#portfolio-text {
+  font-size: 4vw;
+  line-height: 15vh;
+  width: 80%;
+  margin-left: 10%;
+  color: #42250F;
+
+}
+
+/* button */
+
+.button {
+  background-color: #42250F;
+  border: none;
+  border-radius: 25% 0%;
+  padding: 25px;
+  color: #ab8240;
+  text-align: center;
+  text-decoration: none;
+  font-size: 3vw;
+  display: inline;
+  margin-left: 20%;
+}
+
+
+/* footer */
+
+.contacts {
+  font-size: 2.5vw;
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 1%;
+
+}
+
+.socialmedia-gap {
+  margin-left: 7px;
+}
+
+.contact-email {
+  font-size: 2.5vw;
+  clear: both;
+  float: right;
+}
+
+.font-number {
+  font-family: "Bebas Neue", Tangerine, sans-serif;
+  font-weight: 100;
+  font-size: 1.2vw;
+}
+
+/* gallery job-sample*/
+
+#job-sample {
+  clear: both;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0;
+
+  animation-name: job-sample;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* signup-form */
+
+
+.signup-form {
+  clear: both;
+  margin-left: 10%;
+  font-size: 60%;
+  color: #ab8240;
+  background-color: #42250F;
+  border-radius: 5%;
+  opacity: .9;
+  max-width: 70%;
+  padding: 30px;
+}
+
+.signup-form h2 {
+  font-size: 250%;
+  text-align: center;
+}
+
+.input-text {
+  background: transparent;
+  color: white;
+  width: 50vw;
+  height: 25px;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+}
+
+.feedback {
+  height: 50vh;
+  width: 50vw;
+}
+
+
+.button-submit {
+  font-family: Tangerine, sans-serif;
+  background-color: #42250F;
+  border: 1px solid #ab8240;
+  border-radius: 25% 0%;
+  padding: 15px;
+  color: #ab8240;
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.confirm-text {
+  clear: both;
+  line-height: 15vh;
+  text-align: center;
+}
+
+/* creates the level of zoom for job-sample */
+@keyframes job-sample {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+#job-sample {
+  background-color: white;
+  --gap: 16px;
+  --num-cols: 3;
+  --row-height: 100px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+
+}
+
+#job-sample>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Media queries */
+
+/* For small screen sizes below 800px width */
+
+@media screen and (max-width: 800px) {
+  #menu {
+    line-height: 30px;
+
+  }
+
+  .contacts {
+    font-size: 3.5vw;
+  }
+
+  .contact-email {
+    font-size: 3.5vw;
+  }
+
+  .font-number {
+    font-size: 2.5vw;
+  }
+}
+
+/* For small screen sizes below 650px width */
+@media screen and (max-width: 650px) {
+  #logo {
+    width: 25%;
+  }
+
+  #portfolio-text {
+    line-height: 7vh;
+    font-size: 5vw;
+  }
+
+  .button {
+    font-size: 4vw;
+    margin: 10%;
+    padding: 20px;
+  }
+
+  #job-sample {
+    --num-cols: 1;
+  }
+}
+
+/* For small screen sizes below 330px width */
+@media screen and (max-width: 330px) {
+  #menu {
+    font-size: 40%;
+  }
+  .button {
+    padding: 20px;
+    font-size: 7vw;
+    display: block;
+  }
+
+  #portfolio-text {
+    font-size: 7vw;
+  }
+
+  .contacts {
+    font-size: 6vw;
+  }
+
+  .font-number {
+    font-size: 4.5vw;
+  }
+
+  .contact-email {
+    font-size: 6vw;
+  }
+
+  .signup-form h2 {
+    font-size: 13vw;
+  }
+
+  .button-submit {
+    font-size: 10vw;
+  }
+  
+  .confirm-text {
+    line-height: 7vh;
+    font-size: 10vw;
+  }
+}
+
+/* For small screen sizes below 295px width */
+@media screen and (max-width: 295px) {
+  
+  .button {
+    padding: 15px;
+    font-size: 10vw;
+  }
+
+  #portfolio-text {
+    font-size: 10vw;
+    line-height: 5vh;
+  }
+
+}
