@@ -51,25 +51,6 @@ a:hover {
   border-bottom: 1px solid #42250F;
 }
 
-
-
-/* slider */
-
-.slider {
-  clear: both;
-  width: 80%;
-  height: 80vh;
-  border-radius: 35%;
-  border-width: 15px;
-  border-style: groove;
-  border-color: #42250F;
-  background-size: cover;
-  box-shadow: 3px 5px 10px 15px #ab8240;
-  animation-name: slider;
-  animation: slider 14s infinite linear;
-  margin-left: 10%;
-}
-
 .presentation {
     margin: 10%;
     display: grid;
@@ -163,9 +144,7 @@ h3:hover {
   clear: both;
   margin-left: 10%;
   font-size: 60%;
-  color: #ab8240;
-  background-color: #42250F;
-  border-radius: 5%;
+  color: #42250F;
   opacity: .9;
   max-width: 70%;
   padding: 30px;
